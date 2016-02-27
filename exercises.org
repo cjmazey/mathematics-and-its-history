@@ -1,7 +1,8 @@
 # -*- org-confirm-babel-evaluate: nil; -*-
 #+title: Mathematics and Its History
-#+options: num:nil
-#+startup: indent
+#+OPTIONS: num:nil
+#+STARTUP: indent
+#+PROPERTY: header-args:axiom :exports results
 
 * Initialization
 
@@ -41,7 +42,7 @@
 **** 1.2.1
 
 #+name: ex-1.2.1
-#+BEGIN_SRC axiom :var pairs=fig-1.3 :exports results
+#+BEGIN_SRC axiom :var pairs=fig-1.3
   map (p +-> sqrt(p.2^2 - p.1^2), pairs) :: List(Integer)
 #+END_SRC
 
