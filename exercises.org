@@ -1,0 +1,62 @@
+# -*- org-confirm-babel-evaluate: nil; -*-
+#+title: Mathematics and Its History
+#+options: num:nil
+#+startup: indent
+
+* Initialization
+
+#+BEGIN_SRC axiom :results none
+)clear all
+)set output characters default
+#+END_SRC
+
+* 1 The Theorem of Pythagoras
+
+** 1.1 Arithmetic and Geometry
+
+** 1.2 Pythagorean Triples
+
+*** Exercises
+
+#+caption: Pairs in Plimpton 322
+#+name: fig-1.3
+|     a |      c |
+|-------+--------|
+|   119 |    169 |
+|  3367 |   4825 |
+|  4601 |   6649 |
+| 12709 |  18541 |
+|    65 |     97 |
+|   319 |    481 |
+|  2291 |   3541 |
+|   799 |   1249 |
+|   481 |    769 |
+|  4961 |   8161 |
+|    45 |     75 |
+|  1679 |   2929 |
+|   161 |    289 |
+|  1771 |   3229 |
+|    56 |    106 |
+
+**** 1.2.1
+
+#+name: ex-1.2.1
+#+BEGIN_SRC axiom :var pairs=fig-1.3 :exports results
+  map (p +-> sqrt(p.2^2 - p.1^2), pairs) :: List(Integer)
+#+END_SRC
+
+#+RESULTS: ex-1.2.1
+#+begin_example
+(1) -> pairs := [[119, 169], [3367, 4825], [4601, 6649], [12709, 18541], [65, 97], [319, 481], [2291, 3541], [799, 1249], [481, 769], [4961, 8161], [45, 75], [1679, 2929], [161, 289], [1771, 3229], [56, 106]]
+
+   (1)
+   [[119,169], [3367,4825], [4601,6649], [12709,18541], [65,97], [319,481],
+    [2291,3541], [799,1249], [481,769], [4961,8161], [45,75], [1679,2929],
+    [161,289], [1771,3229], [56,106]]
+                                            Type: List(List(PositiveInteger))
+(2) -> map (p +-> sqrt(p.2^2 - p.1^2), pairs) :: List(Integer)
+
+   (2)  [120,3456,4800,13500,72,360,2700,960,600,6480,60,2400,240,2700,90]
+                                                          Type: List(Integer)
+
+#+end_example
