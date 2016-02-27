@@ -85,3 +85,20 @@
                                                           Type: List(Integer)
 
 #+end_example
+
+**** 1.2.3
+
+#+BEGIN_SRC latex
+  Any integer $z$ is of the form $2n$ or $2n+1$ for some integer $n$.
+  In the first case, we have
+  \begin{eqnarray*}
+    z^2 &=& {(2n)}^2 \\
+        &=& 4n^2\,,
+  \end{eqnarray*}
+  and in the second,
+  \begin{eqnarray*}
+    z^2 &=& {(2n+1)}^2 \\
+        &=& 4n^2+4n+1 \\
+        &=& 4(n^2+n)+1\,.
+  \end{eqnarray*}
+#+END_SRC
