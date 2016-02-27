@@ -3,6 +3,7 @@
 #+OPTIONS: num:nil
 #+STARTUP: indent
 #+PROPERTY: header-args:axiom :exports results
+#+PROPERTY: header-args:latex :results drawer :exports results
 
 * Initialization
 
