@@ -121,3 +121,34 @@
   \end{align*}
   but this contradicts Exercise 1.2.3.
 #+END_SRC
+
+** 1.3 Rational Points on the Circle
+
+*** 1.3.1
+
+#+BEGIN_SRC latex
+  Let $(a,b,c)$ be any Pythagorean triple.  Then $a,b,c \in \mathbb{Z}$
+  and $a^2 + b^2 = c^2$, whence
+  ${(\frac{a}{c})}^2 + {(\frac{b}{c})}^2 = 1$.  Therefore
+  $(\frac{a}{c}, \frac{b}{c})$ is a rational point on the unit circle.
+
+  From the preceding discussion, we know that the pair
+  $(\frac{1-t^2}{1+t^2}, \frac{2t}{1+t^2})$ runs through all rational
+  point on the unit circle as $t$ runs through $\mathbb{Q}$.  Thus for
+  some $t$, $\frac{a}{c} = \frac{1-t^2}{1+t^2}$ and
+  $\frac{b}{c} = \frac{2t}{1+t^2}$.  Put $t=\frac{q}{p}$.  Then
+
+  \begin{align*}
+    \frac{1-t^2}{1+t^2}
+    &= \frac{1-{(\frac{q}{p})}^2}{1+{(\frac{q}{p})}^2}  \\
+    &= \frac{p^2-q^2}{p^2+q^2}
+  \end{align*}
+
+  and
+
+  \begin{align*}
+    \frac{2t}{1+t^2}
+    &= \frac{2\frac{q}{p}}{1+{(\frac{q}{p})}^2} \\
+    &= \frac{2pq}{p^2+q^2}\,.
+  \end{align*}
+#+END_SRC
