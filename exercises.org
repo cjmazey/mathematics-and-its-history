@@ -1,13 +1,14 @@
 # -*- org-confirm-babel-evaluate: nil; -*-
-#+title: Mathematics and Its History
+#+TITLE: Mathematics and Its History
 #+OPTIONS: num:nil
 #+STARTUP: indent
 #+PROPERTY: header-args:axiom :exports results
 #+PROPERTY: header-args:latex :results drawer :exports results
+#+INFOJS_OPT: view:overview toc:nil
 
 * Initialization
 
-#+BEGIN_SRC axiom :results none
+#+BEGIN_SRC axiom :results silent
 )clear all
 )set output characters default
 #+END_SRC
@@ -15,6 +16,8 @@
 * 1 The Theorem of Pythagoras
 
 ** 1.1 Arithmetic and Geometry
+
+(nothing to see here)
 
 ** 1.2 Pythagorean Triples
 
@@ -92,16 +95,16 @@
 #+BEGIN_SRC latex
   Any integer $z$ is of the form $2n$ or $2n+1$ for some integer $n$.
   In the first case, we have
-  \begin{eqnarray*}
-    z^2 &=& {(2n)}^2 \\
-        &=& 4n^2\,,
-  \end{eqnarray*}
+  \begin{align*}
+    z^2 &= {(2n)}^2 \\
+        &= 4n^2\,,
+  \end{align*}
   and in the second,
-  \begin{eqnarray*}
-    z^2 &=& {(2n+1)}^2 \\
-        &=& 4n^2+4n+1 \\
-        &=& 4(n^2+n)+1\,.
-  \end{eqnarray*}
+  \begin{align*}
+    z^2 &= {(2n+1)}^2 \\
+        &= 4n^2+4n+1 \\
+        &= 4(n^2+n)+1\,.
+  \end{align*}
 #+END_SRC
 
 **** 1.2.4
@@ -110,11 +113,11 @@
   Suppose indeed that $(a,b,c)$ is a Pythagorean triple and that $a$ and
   $b$ are both odd.  Then there exists $m,n$ such that $a=2m+1$ and
   $b=2n+1$.  But then
-  \begin{eqnarray*}
-    c^2 &=& a^2+b^2 \\
-        &=& {(2m+1)}^2+{(2n+1)}^2 \\
-        &=& 4m^2+4m+1+4n^2+4n+1 \\
-        &=& 4(m^2+m+n^2+n)+2\,,
-  \end{eqnarray*}
+  \begin{align*}
+    c^2 &= a^2+b^2 \\
+        &= {(2m+1)}^2+{(2n+1)}^2 \\
+        &= 4m^2+4m+1+4n^2+4n+1 \\
+        &= 4(m^2+m+n^2+n)+2\,,
+  \end{align*}
   but this contradicts Exercise 1.2.3.
 #+END_SRC
